@@ -3,6 +3,7 @@ provider "aws" {
   secret_key = "${var.secret_key}"
   region     = "${var.region}"
 }
+
 resource "aws_instance" "ebizon" {
         ami = "${var.ami}"
         instance_type = "${var.instance_type}"
