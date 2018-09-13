@@ -1,6 +1,6 @@
 resource "aws_elb" "example" {
   name               = "${var.name}"
-  subnets = ["subnet-6931a423"]
+  subnets = ["${var.elb_subnet}"]
   security_groups = ["${aws_security_group.elb.id}"]
 
 
