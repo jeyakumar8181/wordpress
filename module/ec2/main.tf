@@ -8,7 +8,7 @@ resource "aws_instance" "ebizon" {
         ami = "${var.ami}"
         instance_type = "${var.instance_type}"
         key_name = "${var.key_name}"
-        subnet_id = "${var.ec2_subnet}"
+        subnet_id = ["${var.ec2_subnet}"]
         security_groups = ["${aws_security_group.allow.id}"]
         associate_public_ip_address = "true"
         tags {
