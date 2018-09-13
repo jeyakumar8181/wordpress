@@ -3,5 +3,5 @@ variable "instance_class" {
         default = "db.t2.micro"
 }
 variable "vpc_id" {
-  default = "vpc-881a21f3"
+  default = "vpc-0ef67e6b"
 }
