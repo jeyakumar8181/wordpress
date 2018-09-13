@@ -1,12 +1,13 @@
 provider "aws" {
-        region = "${var.AWS_REGION}"
+  access_key = "${var.access_key}"
+  secret_key = "${var.secret_key}"
+  region     = "${var.region}"
 }
-
-resource"aws_instance" "ebizon" {
-        ami = "ami-04681a1dbd79675a5"
-        instance_type = "t2.micro"
-        key_name = "${var.Key_Name}"
-        subnet_id = "subnet-6931a423"
+resource "aws_instance" "example" {
+        ami = "${var.ami}"
+        instance_type = "${var.instance_type}"
+        key_name = "${var.key_name}"
+                subnet_id = "${var.ec2_subnet}"
         security_groups = ["${aws_security_group.allow.id}"]
         associate_public_ip_address = "true"
         tags {
