@@ -4,7 +4,7 @@ variable "name" {
         default = "ebizon"
 }
 variable "vpc_id" {
-  default = "vpc-881a21f3"
+  default = "vpc-0ef67e6b"
 }
 variable "server_id" {}
 variable "elb_subnet" {}
