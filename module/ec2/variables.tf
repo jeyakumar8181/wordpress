@@ -8,5 +8,5 @@ variable "instance_type" {}
 variable  "key_name" {} 
 variable "ec2_subnet" {}
 variable "vpc_id" {
-  default = "vpc-881a21f3"
+  default = "vpc-0ef67e6b"
 }
